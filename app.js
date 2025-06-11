@@ -41,8 +41,7 @@ app.use(logger('dev'));
 app.use(methodOverride());
 app.use(session({
   secret: 'keyboard cat',
-  name: 'connect.sid',
-  cookie: { path: '/' }
+  name: 'connect.sid'
 }))
 app.use(csrf({ cookie: true }))
 app.use(bodyParser.json());
