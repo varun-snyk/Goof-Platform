@@ -44,6 +44,7 @@ app.use(session({
   name: 'connect.sid',
   cookie: { path: '/' }
 }))
+app.use(csrf())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
