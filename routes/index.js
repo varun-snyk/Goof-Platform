@@ -86,7 +86,7 @@ exports.get_account_details = function(req, res, next) {
  	return res.render('account.hbs', profile)
 }
 
-exports.save_account_details = {}
+
 
 exports.isLoggedIn = function (req, res, next) {
   if (req.session.loggedIn === 1) {
