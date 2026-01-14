@@ -43,7 +43,7 @@ app.use(session({
   secret: 'keyboard cat',
   name: 'connect.sid'
 }))
-app.use(csrf({ cookie: true }))
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
