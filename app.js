@@ -2,6 +2,9 @@
  * Module dependencies.
  */
 
+// Log application start time
+console.log(`Application started at: ${new Date().toISOString()}`);
+
 // mongoose setup
 require('./mongoose-db');
 require('./typeorm-db')

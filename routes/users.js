@@ -6,6 +6,7 @@ var router = express.Router()
 module.exports = router
 
 router.get('/', async (req, res, next) => {
+  console.log(`Current date and time: ${new Date().toLocaleString()}`);
 
   const mongoConnection = typeorm.getConnection('mysql')
   const repo = mongoConnection.getRepository("Users")
